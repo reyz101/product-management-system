@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard | Korsat X Parmaga</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="sales.css">
+    
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img id="logo" src="assets\imgs\logo.png" alt="">
+                        </span>
+                        <span class="logoTitle">Ohh Wee Ice Cream</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="index.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        <span class="icon">
+                            <ion-icon name="pricetags-outline"></ion-icon>
+                        </span>
+                        <span class="title">Products</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="feedbacks.html">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Feedbacks</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sales.html">
+                        <span class="icon">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sales</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="salesreport.html">
+                        <span class="icon">
+                            <ion-icon name="document-text-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sales Report</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="analytics-outline"></ion-icon>
+                        </span>
+                        <span class="title">Analytics</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="assets/imgs/user.png" alt="">
+                </div>
+                <div class="username">
+                    <span >Admin</span>
+                </div>
+            </div>
+
+            <!-- ======================= Sales ================== -->
+
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Sales</h2>
+                        <a href="#" class="btn">Add Sales</a>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>#</td>
+                                <td>Product Name</td>
+                                <td>Quantity</td>
+                                <td>Total Sales</td>
+                                <td>Date</td>
+                                <td>Action</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Ohh Kee</td>
+                                <td>45</td>
+                                <td>₱1755.00</td>
+                                <td>2024-06-02</td>
+                                <td>
+                                    <button class="status pending" title="Edit"><ion-icon name="pencil-outline"></ion-icon></button>
+                                    <button class="status delivered" title="Delete"><ion-icon name="trash-outline"></ion-icon></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Ohh Mee</td>
+                                <td>15</td>
+                                <td>₱2835.00</td>
+                                <td>2024-06-02</td>
+                                <td>
+                                    <button class="status pending" title="Edit"><ion-icon name="pencil-outline"></ion-icon></button>
+                                    <button class="status delivered" title="Delete"><ion-icon name="trash-outline"></ion-icon></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Ohh Laa</td>
+                                <td>67</td>
+                                <td>₱6633.00</td>
+                                <td>2024-06-02</td>
+                                <td>
+                                    <button class="status pending" title="Edit"><ion-icon name="pencil-outline"></ion-icon></button>
+                                    <button class="status delivered" title="Delete"><ion-icon name="trash-outline"></ion-icon></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>Ohh Baa</td>
+                                <td>130</td>
+                                <td>₱25870.00</td>
+                                <td>2024-06-02</td>
+                                <td>
+                                    <button class="status pending" title="Edit">
+                                        <ion-icon name="pencil-outline"></ion-icon>
+                                    </button>
+                                    <button class="status delivered"title="Delete">
+                                        <ion-icon name="trash-outline"></ion-icon>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td>Ohh Lee</td>
+                                <td>69</td>
+                                <td>₱4761.00</td>
+                                <td>2024-06-02</td>
+                                <td>
+                                    <button class="status pending" title="Edit"><ion-icon name="pencil-outline"></ion-icon></button>
+                                    <button class="status delivered" title="Delete"><ion-icon name="trash-outline"></ion-icon></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>6</td>
+                                <td>Ohh Boo</td>
+                                <td>99</td>
+                                <td>₱10791.00</td>
+                                <td>2024-06-02,</td>
+                                <td>
+                                    <button class="status pending" title="Edit"><ion-icon name="pencil-outline"></ion-icon></button>
+                                    <button class="status delivered" title="Delete"><ion-icon name="trash-outline"></ion-icon></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>7</td>
+                                <td>Ohh Pee</td>
+                                <td>234</td>
+                                <td>₱32526.00</td>
+                                <td>2024-06-02</td>
+                                <td>
+                                    <button class="status pending" title="Edit"><ion-icon name="pencil-outline"></ion-icon></button>
+                                    <button class="status delivered" title="Delete"><ion-icon name="trash-outline"></ion-icon></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>8</td>
+                                <td>Ohh Taa</td>
+                                <td>38</td>
+                                <td>₱3002.00</td>
+                                <td>2024-06-02</td>
+                                <td>
+                                    <button class="status pending" title="Edit"><ion-icon name="pencil-outline"></ion-icon></button>
+                                    <button class="status delivered" title="Delete"><ion-icon name="trash-outline"></ion-icon></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

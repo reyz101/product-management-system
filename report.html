@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Report</title>
+    <link rel="stylesheet" href="report.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sales Report</h1>
+        <p id="date-range">2024-06-02 till 2024-06-02</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Product Title</th>
+                    <th>Selling Price</th>
+                    <th>Total Qty</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-06-02</td>
+                    <td>Ohh Kee</td>
+                    <td>₱39.00</td>
+                    <td>45</td>
+                    <td>₱1755.00</td>
+                </tr>
+                <tr>
+                    <td>2024-06-02</td>
+                    <td>Ohh Mee</td>
+                    <td>₱189.00</td>
+                    <td>15</td>
+                    <td>₱2835.00</td>
+                </tr>
+                <tr>
+                    <td>2024-06-02</td>
+                    <td>Ohh Laa</td>
+                    <td>₱99.00</td>
+                    <td>67</td>
+                    <td>₱6633.00</td>
+                </tr>
+                <tr>
+                    <td>2024-06-02</td>
+                    <td>Ohh Baa</td>
+                    <td>₱199.00</td>
+                    <td>130</td>
+                    <td>₱25870.00</td>
+                </tr>
+                <tr>
+                    <td>2024-06-02</td>
+                    <td>Ohh Lee</td>
+                    <td>₱69.00</td>
+                    <td>69</td>
+                    <td>₱4761.00</td>
+                </tr>
+                <tr>
+                    <td>2024-06-02</td>
+                    <td>Ohh Boo</td>
+                    <td>₱109.00</td>
+                    <td>99</td>
+                    <td>₱10791.00</td>
+                </tr>
+                <tr>
+                    <td>2024-06-02</td>
+                    <td>Ohh Pee</td>
+                    <td>₱139.00</td>
+                    <td>234</td>
+                    <td>₱32526.00</td>
+                </tr>
+                <tr>
+                    <td>2024-06-02</td>
+                    <td>Ohh Taa</td>
+                    <td>₱79.00</td>
+                    <td>38</td>
+                    <td>₱3002.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="grand-total-label">GRAND TOTAL</td>
+                    <td>₱88,173.00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p class="profit">PROFIT: ₱88,173.00</p>
+    </div>
+
+    <script>
+        function getParameterByName(name, url = window.location.href) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+            var results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var dateRange = getParameterByName('dateRange');
+            if (dateRange) {
+                document.getElementById('date-range').textContent = dateRange;
+            }
+        });
+    </script>
+</body>
+</html>

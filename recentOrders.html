@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard | Korsat X Parmaga</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="recentOrders.css">
+
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img id="logo" src="assets\imgs\logo.png" alt="">
+                        </span>
+                        <span class="logoTitle">Ohh Wee Ice Cream</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="index.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        <span class="icon">
+                            <ion-icon name="pricetags-outline"></ion-icon>
+                        </span>
+                        <span class="title">Products</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="feedbacks.html">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Feedbacks</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sales.html">
+                        <span class="icon">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sales</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="salesreport.html">
+                        <span class="icon">
+                            <ion-icon name="document-text-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sales Report</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="analytics-outline"></ion-icon>
+                        </span>
+                        <span class="title">Analytics</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="assets/imgs/user.png" alt="">
+                </div>
+                <div class="username">
+                    <span>Admin</span>
+                </div>
+            </div>
+
+            <!-- ======================= Products ================== -->
+
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                    </div>
+    
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Product Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+                            <tr>
+                                <td>Ohh Kee</td>
+                                <td>₱89</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Ohh Mee</td>
+                                <td>₱159</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Ohh Laa (12oz)</td>
+                                <td>₱149</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Ohh Laa (16oz)</td>
+                                <td>₱199</td>
+                                <td>Due</td>
+                                <td><span class="status inProgress">In Progress</span></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Ohh Kee</td>
+                                <td>₱89</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Ohh Bee</td>
+                                <td>₱119</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Ohh Mee</td>
+                                <td>₱159</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Ohh Kee</td>
+                                <td>₱89</td>
+                                <td>Due</td>
+                                <td><span class="status inProgress">In Progress</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- =========== Scripts =========  -->
+            <script src="main.js"></script>
+
+            <!-- ====== ionicons ======= -->
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

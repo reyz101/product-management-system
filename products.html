@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard | Korsat X Parmaga</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="products.css">
+
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img id="logo" src="assets\imgs\logo.png" alt="">
+                        </span>
+                        <span class="logoTitle">Ohh Wee Ice Cream</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="index.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        <span class="icon">
+                            <ion-icon name="pricetags-outline"></ion-icon>
+                        </span>
+                        <span class="title">Products</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="feedbacks.html">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Feedbacks</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sales.html">
+                        <span class="icon">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sales</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="salesreport.html">
+                        <span class="icon">
+                            <ion-icon name="document-text-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sales Report</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="analytics-outline"></ion-icon>
+                        </span>
+                        <span class="title">Analytics</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="assets/imgs/user.png" alt="">
+                </div>
+                <div class="username">
+                    <span>Admin</span>
+                </div>
+            </div>
+
+            <!-- ======================= Products ================== -->
+
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Products</h2>
+                        <a href="addProducts.html" class="btn">Add Product</a>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>#</td>
+                                <td>Photo</td>
+                                <td>Product Name</td>
+                                <td>In-Stock</td>
+                                <td>Price</td>
+                                <td>Product Added</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="assets/imgs/1.png" alt=""></td>
+                                <td>Ohh Kee</td>
+                                <td>45</td>
+                                <td>₱39</td>
+                                <td>March 14, 2024, 9:22 PM</td>
+                                <td><span class="status delivered">Available</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td><img src="assets/imgs/2.png" alt=""></td>
+                                <td>Ohh Mee</td>
+                                <td>15</td>
+                                <td>₱189</td>
+                                <td>July 19, 2024, 7:58 AM</td>
+                                <td><span class="status delivered">Available</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td><img src="assets/imgs/3.png" alt=""></td>
+                                <td>Ohh Laa</td>
+                                <td>67</td>
+                                <td>₱99</td>
+                                <td>October 25, 2024, 4:16 PM</td>
+                                <td><span class="status delivered">Available</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td><img src="assets/imgs/4.png" alt=""></td>
+                                <td>Ohh Baa</td>
+                                <td>130</td>
+                                <td>₱199</td>
+                                <td>February 06, 2024, 11:34 AM</td>
+                                <td><span class="status delivered">Available</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td><img src="assets/imgs/5.png" alt=""></td>
+                                <td>Ohh Lee</td>
+                                <td>0</td>
+                                <td>₱69</td>
+                                <td>December 12, 2024, 6:47 PM</td>
+                                <td><span class="status return">Unavailable</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>6</td>
+                                <td><img src="assets/imgs/6.png" alt=""></td>
+                                <td>Ohh Boo</td>
+                                <td>99</td>
+                                <td>₱109</td>
+                                <td>August 03, 2024, 3:11 PM</td>
+                                <td><span class="status delivered">Available</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>7</td>
+                                <td><img src="assets/imgs/7.png" alt=""></td>
+                                <td>Ohh Noo</td>
+                                <td>0</td>
+                                <td>₱59</td>
+                                <td>August 03, 2024, 3:11 PM</td>
+                                <td><span class="status return">Unavailable</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ================= Toppings ================ -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Toppings</h2>
+                        <a href="addToppings.html" class="btn">Add Topping</a>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="cardHeader">
+                                    <h2>Fruits</h2>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cardHeader">
+                                    <h2>+ ₱10</h2>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <h4>Mango</h4>
+                            </td>
+                            <td>
+                                <h4>Strawberry</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>Banana</h4>
+                            </td>
+                            <td>
+                                <h4>Grapes</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="cardHeader">
+                                    <h2>Crunches</h2>
+                                </div>
+                                <td>
+                                    <div class="cardHeader">
+                                        <h2>+ ₱10</h2>
+                                    </div>
+                                </td>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>Oreo</h4>
+                            </td>
+                            <td><h4>Graham</h4></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>Rice Crisps</h4>
+                            </td>
+                            <td><h4>Biscoff</h4></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>Sliced Almonds</h4>
+                            </td>
+                            <td><h4>Fruit Loops</h4></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>Honey Cornflakes</h4>
+                            </td>
+                            <td><h4>Peanuts</h4></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="cardHeader">
+                                    <h2>Sauces</h2>
+                                </div>
+                                <td><div class="cardHeader">
+                                    <h2>+ ₱15</h2>
+                                </div></td>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>Nutella</h4>
+                            </td>
+                            <td><h4>White Choco</h4></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>Biscoff</h4>
+                            </td>
+                            <td><h4>Salted Caramel</h4></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>Butterscotch</h4>
+                            </td>
+                            <td><h4>Pistachio</h4></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- =========== Scripts =========  -->
+            <script src="main.js"></script>
+
+            <!-- ====== ionicons ======= -->
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

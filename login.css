@@ -1,0 +1,77 @@
+body {
+  background-image: url(assets/imgs/background.png);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-page {
+  padding: 2%;
+  background-color: #f9f9f9;
+  min-height: 100px;
+  border-radius: 10px;
+}
+
+.text-center {
+  color: #e9047e;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 2px solid #ff1493;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+}
+
+label {
+  color: #ff1493;
+}
+
+button {
+  background-color: #ff1493;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+}
+
+button:active {
+  background-color: #ff1491b1;
+}
+
+button:hover {
+  background-color: #e9047e;
+}
+
+::placeholder {
+  color: #ff1493;
+}
+
+input[type=text]:focus {
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+}
+
+input[type=password]:focus {
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+}
